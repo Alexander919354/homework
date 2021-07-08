@@ -1,7 +1,7 @@
 @font-face {
   font-family: "TT Lakes";
   src: url("asserts/fonts/TTLakesCondensed-Regular.eot");
-  src: local("/fonts/"), local("/fonts/"),
+  src: local("fonts/"), local("fonts/"),
     url("asserts/fonts/TTLakesCondensed-Regular.eot")
       format("embedded-opentype"),
     url("asserts/fonts/TTLakesCondensed-Regular.woff") format("woff"),
@@ -13,7 +13,7 @@
 @font-face {
   font-family: "TT Lakes bold";
   src: url("asserts/fonts/TTLakes-Bold.eot");
-  src: local("/fonts/"), local("/fonts/"),
+  src: local("fonts/"), local("fonts/"),
     url("asserts/fonts/TTLakes-Bold.eot") format("embedded-opentype"),
     url("asserts/fonts/TTLakes-Bold.woff") format("woff"),
     url("asserts/fonts/TTLakes-Bold.ttf") format("truetype");
@@ -262,7 +262,7 @@ li {
 
     width: 170px;
     height: 40px;
-    background: url(/asserts/images/repair.svg) no-repeat right;
+    background: url(asserts/images/repair.svg) no-repeat right;
 
     order: 2;
   }
@@ -274,6 +274,6 @@ li {
 
     width: 170px;
     height: 40px;
-    background: url(/asserts/images/check-status.svg) no-repeat right;
+    background: url(asserts/images/check-status.svg) no-repeat right;
     order: 3;
 }
