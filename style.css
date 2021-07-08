@@ -76,7 +76,7 @@ li {
 .logo {
   width: 98px;
   height: 51px;
-  background-image: url(/asserts/images/logo.svg);
+  background-image: url(asserts/images/logo.svg);
   background-repeat: no-repeat;
   margin-left: 20px;
 }
@@ -89,20 +89,20 @@ li {
 .call {
   width: 40px;
   height: 40px;
-  background-image: url(/asserts/images/call.svg);
+  background-image: url(asserts/images/call.svg);
   background-repeat: no-repeat;
 }
 
 .chat {
   width: 40px;
   height: 40px;
-  background-image: url(/asserts/images/chat.svg);
+  background-image: url(asserts/images/chat.svg);
   background-repeat: no-repeat;
 }
 .profile {
   width: 40px;
   height: 40px;
-  background-image: url(/asserts/images/profile.svg);
+  background-image: url(asserts/images/profile.svg);
   background-repeat: no-repeat;
 }
 
@@ -115,13 +115,13 @@ li {
 .group-2__repair {
   width: 40px;
   height: 40px;
-  background-image: url(/asserts/images/repair.svg);
+  background-image: url(asserts/images/repair.svg);
   background-repeat: no-repeat;
 }
 .group-2__check-status {
   width: 40px;
   height: 40px;
-  background-image: url(/asserts/images/check-status.svg);
+  background-image: url(asserts/images/check-status.svg);
   background-repeat: no-repeat;
 }
 
