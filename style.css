@@ -31,7 +31,13 @@ li {
   margin: 0;
   padding: 0;
 }
-
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
 /* Шапка сайта */
 
 .header {
@@ -43,20 +49,20 @@ li {
   box-shadow: 0px 2px 0px #d9fff5;
 }
 
-.burger {
+.header__burger-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
 }
-.group {
+.header__communication {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-grow: 5;
 }
 
-.group::before {
+.header__communication::before {
   display: none;
   content: "";
   width: 2px;
@@ -65,7 +71,7 @@ li {
 
   align-self: center;
 }
-.group::after {
+.header__communication::after {
   display: inline-block;
   content: "";
   width: 2px;
@@ -73,61 +79,48 @@ li {
   height: 40px;
   background-color: #eaeaea;
 }
-.logo {
-  width: 98px;
+.header__logo {
   height: 51px;
-  background-image: url(asserts/images/logo.svg);
-  background-repeat: no-repeat;
-  margin-left: 20px;
+  margin: auto;
 }
-.buttons {
+.header__hide-buttons {
   display: none;
   justify-content: space-around;
   align-items: center;
   flex-grow: 1;
 }
-.call {
+.header__call {
   width: 40px;
   height: 40px;
-  background-image: url(asserts/images/call.svg);
-  background-repeat: no-repeat;
 }
 
-.chat {
+.header__chat {
   width: 40px;
   height: 40px;
-  background-image: url(asserts/images/chat.svg);
-  background-repeat: no-repeat;
 }
-.profile {
+.header__profile {
   width: 40px;
   height: 40px;
-  background-image: url(asserts/images/profile.svg);
-  background-repeat: no-repeat;
 }
 
-.group-2 {
+.header__client {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-grow: 1;
 }
-.group-2__repair {
+.header__repair {
   width: 40px;
   height: 40px;
-  background-image: url(asserts/images/repair.svg);
-  background-repeat: no-repeat;
 }
-.group-2__check-status {
+.header__check-status {
   width: 40px;
   height: 40px;
-  background-image: url(asserts/images/check-status.svg);
-  background-repeat: no-repeat;
 }
 
 /* Тело сайта */
 
-.background {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -149,16 +142,15 @@ li {
   padding-left: 16px;
   flex-basis: 70%;
 }
-.nav {
+.nav-menu {
   margin: 16px;
 }
-.menu {
+.nav-menu__item {
   display: flex;
   align-items: space-between;
   overflow: hidden;
-  /* height: 40px; */
 }
-.menu__button {
+.nav-menu__link {
   font-family: "TT Lakes", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -170,18 +162,18 @@ li {
   padding: 5px 10px;
 }
 
-.menu__button:hover {
+.nav-menu__link:hover {
   background-color: #ffffff;
   border: solid #b8ffec;
 }
 
-.text {
+.info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 10px;
 }
-.service {
+.title__h1 {
   font-family: "TT Lakes bold";
   font-size: 28px;
   line-height: 40px;
@@ -190,46 +182,56 @@ li {
   text-align: left;
   flex-grow: 1;
 }
-.text__group {
+.title__h1::before {
+  box-shadow: -5px 0 #41f6d7;
+}
+.info__group {
   display: flex;
   flex-direction: column;
 }
-.text__news {
+.info__news {
   max-height: 90px;
   margin-left: 16px;
   overflow: hidden;
   flex-grow: 1;
 }
-.read-more {
+.info__read-more {
   display: flex;
   justify-content: space-around;
   max-width: 132px;
   margin: 16px;
   white-space: nowrap;
 }
-.text__logo {
+.info__logo {
   width: 320px;
   height: 240px;
   margin: 0 auto;
 }
 @media (min-width: 567px) {
-  .group::before,
-  .buttons {
-    display: flex;
+  .header__communication::before {
+    display: block;
+    margin-right: 10px;
   }
-  .logo {
-    flex-grow: 3;
+  .header__hide-buttons {
+    display: inline;
+    text-align: right;
+    padding: 0 10px;
   }
-  .menu__button {
+  .header__logo {
+    display: inline;
+    /* flex-basis: 25%; */
+    text-align: left;
+  }
+  .nav-menu__link {
     font-size: 20px;
   }
-  .text {
+  .info {
     flex-wrap: nowrap;
   }
-  .text__news {
+  .info__news {
     max-height: 230px;
   }
-  .read-more {
+  .info__read-more {
     font-family: TT Lakes;
     font-size: 20px;
     line-height: 24px;
@@ -244,14 +246,14 @@ li {
   .header {
     display: none;
   }
-  .menu {
+  .nav-menu__item {
     flex-wrap: wrap;
     height: 80px;
   }
-  .menu__button {
+  .nav-menu__link {
     font-size: 24px;
   }
-  .group-2__repair {
+  .header__repair {
     display: block;
   }
   .title::after {

@@ -9,47 +9,47 @@
 </head>
 <body>
   <header class="header">
-    <div class="burger">
+    <button class="header__burger-menu" type='button'>
       <img src="asserts/images/burger.svg" alt="">
-    </div>
-    <div class="group">
-      <div class="logo"></div>
-      <div class="buttons">
-        <div class="call"></div>
-        <div class="chat"></div>
-        <div class="profile"></div>
+    </button>
+    <section class="header__communication">
+      <img class="header__logo" src="asserts/images/logo.svg" alt='кнопка меню'>
+      <div class="header__hide-buttons">
+        <button class="header__call" type='button'><img src="asserts/images/call.svg" alt="иконка телефона"></button>
+        <button class="header__chat" type='button'><img src="asserts/images/chat.svg" alt="иконка чата"></button>
+        <button class="header__profile" type='button'><img src="asserts/images/profile.svg" alt="иконка профиля"></button>
       </div>
- 
-    </div>
-    <div class="group-2">
-       <div class="group-2__repair"></div>
-       <div class="group-2__check-status"></div>
-    </div>
+    </section>
+    <section class="header__client">
+       <button class="header__repair" type='button'><img src="asserts/images/repair.svg" alt="иконка ремонта"></div>
+       <button class="header__check-status" type='button'><img src="asserts/images/check-status.svg" alt="иконка проверки"></div>
+    </section>
   </header> 
-  <article class='background'>
+  <main class='main'>
+    <!-- Далее div с вложенным h1 тут стоит потому что на версии для компьютера в div добавляются иконки "Оставить заявку" и "Статус ремонта" через after и before а вставляться просто в h1 они не хотят, поэтому пришлось в div его обернуть  -->
     <div class="title">
-      <p class='service'>Услуги и сервисы</p>   
+      <h1 class='title__h1'>Услуги и сервисы</h1>   
     </div>
-    <nav class="nav">
-      <ul class="menu">
-        <li class="menu__button">Ремонтируемые устройства</li>
-        <li class="menu__button">Дополнительные услуги</li>
-        <li class="menu__button">Цены на услуги  </li>
-        <li class="menu__button">Специальные цены</li> 
-        <li class="menu__button">Отзывы</li>
+    <nav class="nav-menu">
+      <ul class="nav-menu__item">
+        <li class="nav-menu__link">Ремонтируемые устройства</li>
+        <li class="nav-menu__link">Дополнительные услуги</li>
+        <li class="nav-menu__link">Цены на услуги  </li>
+        <li class="nav-menu__link">Специальные цены</li> 
+        <li class="nav-menu__link">Отзывы</li>
       </ul>
     </nav>
-      <section class="text">
-          <div class="text__group">
-            <div class="text__news">
+      <section class="info">
+          <div class="info__group">
+            <div class="info__news">
               <span>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой
               ноутбук Dell с официальной гарантией производителя.</span>
               <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
             </div>
-            <buttons class="read-more"><img src="asserts/images/read-more.svg" alt="стрелочки">Читать далее</buttons>
+            <button class="info__read-more" type = "button"><img src="asserts/images/read-more.svg" alt="стрелочки">Читать далее</button>
           </div>
-        <img class='text__logo' src="asserts/images/MG_3223.png" alt="лого и режим работы">
+        <img class='info__logo' src="asserts/images/MG_3223.png" alt="лого и режим работы">
     </section>
-  </article>
+  </main>
 </body>
 </html>
